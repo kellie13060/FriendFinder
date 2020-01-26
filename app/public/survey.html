@@ -212,10 +212,10 @@
     <script type="text/javascript">
         $("#submit").on("click", function (event) {
             event.preventDefault();
-    
+
             // Form validation
             var valid = true;
-    
+
             if ($("#name").val() === "" ||
                 $("#photo").val() === "") {
                 valid = false;
@@ -231,7 +231,7 @@
                 $("#dates").val() === "empty") {
                 valid = false;
             }
-    
+
             if (valid === true) {
                 var newUser = {
                     name: $("#name").val().trim(),
@@ -249,9 +249,9 @@
                         $("#dates").val(),
                     ]
                 };
-    
+
                 var currentURL = window.location.origin;
-    
+
                 // Ajax call for receiving response after POST req
                 $.post(currentURL + "/api/friends", newUser, function (data) {
                     $("#bestMatchName").text(data.name);
@@ -264,7 +264,7 @@
             }
         });
     </script>
-    
+
 </body>
 
 </html>
