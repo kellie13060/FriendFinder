@@ -20,7 +20,7 @@
     <div class="jumbotron">
       <h1 class="text-center">Friend Finder</h1>
       <hr>
-      <h2 class="text-center">Take the survey below to find your match</h2>
+      <h2 class="text-center">Take the survey below to find your match. Rate on a scale of 1-5 (1 meaning you disagree, 5 meaning you agree)</h2>
       <br>
     </div>
     <div class="row">
@@ -33,21 +33,55 @@
           <div class="card-body">
             <form role="form">
               <div class="form-group">
-                <label for="reserve-name">Name</label>
-                <input type="text" class="form-control" id="reserve-name">
+                <label for="food">You love food</label>
+                <input type="number" class="form-control" id="food">
               </div>
+              <br>
               <div class="form-group">
-                <label for="reserve-phone">Phone Number</label>
-                <input type="text" class="form-control" id="reserve-phone">
+                <label for="netflix">Netflix and Chill is accptable on a weekend night.</label>
+                <input type="number" class="form-control" id="netflix">
               </div>
+              <br>
               <div class="form-group">
-                <label for="reserve-email">Email</label>
-                <input type="text" class="form-control" id="reserve-email">
+                <label for="cats">You love cats</label>
+                <input type="number" class="form-control" id="cats">
               </div>
+              <br>
               <div class="form-group">
-                <label for="reserve-unique-id">Unique ID</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="dogs">You love dogs</label>
+                <input type="number" class="form-control" id="dogs">
               </div>
+              <br>
+              <div class="form-group">
+                <label for="education">Education is important</label>
+                <input type="number" class="form-control" id="education">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="musicals">Musicals are amazing</label>
+                <input type="number" class="form-control" id="musicals">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="pokemon">You play pokemon go</label>
+                <input type="text" class="form-control" id="pokemon">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="games">Video games should be played as often as possible</label>
+                <input type="number" class="form-control" id="games">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="children">Having children is mandatory</label>
+                <input type="number" class="form-control" id="children">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="dates">You like going on dates</label>
+                <input type="number" class="form-control" id="dates">
+              </div>
+              <br>
               <button type="submit" class="btn btn-primary submit">Submit</button>
             </form>
           </div>
@@ -59,8 +93,7 @@
     <footer class="footer">
       <div class="container">
         <p>
-          <a href="/api/tables">API Table Link</a> |
-          <a href="/api/waitlist">API Wait List</a>
+          <a href="/api/friends">API Friends Link</a> |
       </div>
     </footer>
 
