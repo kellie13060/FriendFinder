@@ -2,106 +2,269 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Survey Page</title>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
 
-  <div class="container">
+    <div class="container">
 
-    <div class="jumbotron">
-      <h1 class="text-center">Friend Finder</h1>
-      <hr>
-      <h2 class="text-center">Take the survey below to find your match. Rate on a scale of 1-5 (1 meaning you disagree, 5 meaning you agree)</h2>
-      <br>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <!-- Survey Questions -->
-        <div class="card">
-          <div class="card-header">
-           Survey
-          </div>
-          <div class="card-body">
-            <form role="form">
-              <div class="form-group">
-                <label for="food">You love food</label>
-                <input type="number" class="form-control" id="food">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="netflix">Netflix and Chill is accptable on a weekend night.</label>
-                <input type="number" class="form-control" id="netflix">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="cats">You love cats</label>
-                <input type="number" class="form-control" id="cats">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="dogs">You love dogs</label>
-                <input type="number" class="form-control" id="dogs">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="education">Education is important</label>
-                <input type="number" class="form-control" id="education">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="musicals">Musicals are amazing</label>
-                <input type="number" class="form-control" id="musicals">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="pokemon">You play pokemon go</label>
-                <input type="text" class="form-control" id="pokemon">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="games">Video games should be played as often as possible</label>
-                <input type="number" class="form-control" id="games">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="children">Having children is mandatory</label>
-                <input type="number" class="form-control" id="children">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="dates">You like going on dates</label>
-                <input type="number" class="form-control" id="dates">
-              </div>
-              <br>
-              <button type="submit" class="btn btn-primary submit">Submit</button>
-            </form>
-          </div>
+        <div class="jumbotron">
+            <h1 class="text-center">Friend Finder</h1>
+            <hr>
+            <h4 class="text-center">Take the survey below to find your match.</h4>
+            <br>
         </div>
-      </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Survey Questions -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4>About You</h4>
+                        <hr>
+                        <p>Name (Required)</p>
+                        <input type="text" id="name" class="form-control" required />
+                        <p>Link to Photo Image (Required)</p>
+                        <input type="text" id="photo" class="form-control" required>
+                        <hr>
+                    </div>
+                    <div class="card-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="food">You love food</label>
+                                <select id="food" class="chosen-select">
+                                    <option value="">Select an option</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="netflix">Netflix and Chill is accptable on a weekend night.</label>
+                                    <select id="netflix" class="chosen-select">
+                                        <option value="">Select an option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="cats">You love cats</label>
+                                    <select id="cats" class="chosen-select">
+                                        <option value="">Select an option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="dogs">You love dogs</label>
+                                    <select id="dogs" class="chosen-select">
+                                        <option value="">Select an option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="education">Education is important</label>
+                                    <select id="education" class="chosen-select">
+                                        <option value="">Select an option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="musicals">Musicals are amazing</label>
+                                    <select id="musicals" class="chosen-select">
+                                        <option value="">Select an option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="pokemon">You play pokemon go</label>
+                                    <select id="pokemon" class="chosen-select">
+                                        <option value="">Select an option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="games">Video games should be played as often as possible</label>
+                                    <select id="games" class="chosen-select">
+                                        <option value="">Select an option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="children">Having children is mandatory</label>
+                                    <select id="children" class="chosen-select">
+                                        <option value="">Select an option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="dates">You like going on dates</label>
+                                    <select id="dates" class="chosen-select">
+                                        <option value="">Select an option</option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <hr>
+                                <button type="submit" id="submit" class="btn btn-primary submit">Submit</button>
+                        </form>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="bestMatchModal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Best Match</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 id="bestMatchName"></h3>
+                                    <img src="#" alt="Image of Best Match" id="bestMatchImg">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends Link</a> |
+            </div>
+        </footer>
+
     </div>
 
 
-    <footer class="footer">
-      <div class="container">
-        <p>
-          <a href="/api/friends">API Friends Link</a> |
-      </div>
-    </footer>
 
-  </div>
+    <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+    <script type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
+    <!-- JS for form -->
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+    
+            // Form validation
+            var valid = true;
+    
+            if ($("#name").val() === "" ||
+                $("#photo").val() === "") {
+                valid = false;
+            } else if ($("#food").val() === "empty" ||
+                $("#netflix").val() === "empty" ||
+                $("#cats").val() === "empty" ||
+                $("#dogs").val() === "empty" ||
+                $("#education").val() === "empty" ||
+                $("#musicals").val() === "empty" ||
+                $("#pokemon").val() === "empty" ||
+                $("#games").val() === "empty" ||
+                $("#children").val() === "empty" ||
+                $("#dates").val() === "empty") {
+                valid = false;
+            }
+    
+            if (valid === true) {
+                var newUser = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        $("#food").val(),
+                        $("#netflix").val(),
+                        $("#cats").val(),
+                        $("#dogs").val(),
+                        $("#education").val(),
+                        $("#musicals").val(),
+                        $("#pokemon").val(),
+                        $("#games").val(),
+                        $("#children").val(),
+                        $("#dates").val(),
+                    ]
+                };
+    
+                var currentURL = window.location.origin;
+    
+                // Ajax call for receiving response after POST req
+                $.post(currentURL + "/api/friends", newUser, function (data) {
+                    $("#bestMatchName").text(data.name);
+                    $("#bestMatchImg").attr("src", data.photo);
+                    $("#bestMatchModal").modal("toggle");
+                });
+            } else {
+                // If a required field is missing, show alert
+                alert("Survey is incomplete!");
+            }
+        });
+    </script>
+    
 </body>
 
 </html>
-
-<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
-<script type="text/javascript">
